@@ -25,4 +25,12 @@ return require("packer").startup(function(use)
 
 	-- Cool colorscheme
 	use "folke/tokyonight.nvim" 
+
+	-- LSP
+	use {
+		"williamboman/mason.nvim",
+		run = ":MasonUpdate"
+	}
+	use "williamboman/mason-lspconfig.nvim"
+	use "neovim/nvim-lspconfig"
 end)
