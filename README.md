@@ -1,3 +1,3 @@
-# Adamek-K nvim
+# formerlybased nvim
 
-My personal neovim configuration, heavily inspired by ThePrimeagen. Still a work-in-progress.
+My personal neovim configuration. Still a work-in-progress.
