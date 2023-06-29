@@ -6,6 +6,11 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	use  {
+		"folke/todo-comments.nvim",
+		required = { {'nvim-lua/plenary.nvim'} }
+	}
+
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
 	use "tpope/vim-commentary"
@@ -13,4 +18,8 @@ return require('packer').startup(function(use)
     use "nvim-lua/plenary.nvim"
 
     use "chaimleib/vim-renpy"
+
+    use "sheerun/vim-polyglot"
+
+	use "folke/tokyonight.nvim" 
 end)
