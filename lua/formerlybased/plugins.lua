@@ -10,19 +10,19 @@ return require("packer").startup(function(use)
 	}
 
 	-- Comments are better now!
+	use "tpope/vim-commentary"
 	use  {
 		"folke/todo-comments.nvim",
 		requires = { {"nvim-lua/plenary.nvim"} }
 	}
-	use "tpope/vim-commentary"
 
 	--  Better syntax highlighintg
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
-	-- More languages!!
+	-- More languages!
     use "chaimleib/vim-renpy"
     use "sheerun/vim-polyglot"
 
-	-- Cool colourscheme
+	-- Cool colorscheme
 	use "folke/tokyonight.nvim" 
 end)
