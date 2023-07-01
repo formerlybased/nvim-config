@@ -6,15 +6,11 @@ return require("packer").startup(function(use)
 	-- Move between files quickly
 	use {
 		"nvim-telescope/telescope.nvim", tag = "0.1.0",
-		requires = { {"nvim-lua/plenary.nvim"} }
 	}
 
 	-- Comments are better now!
 	use "tpope/vim-commentary"
-	use  {
-		"folke/todo-comments.nvim",
-		requires = { {"nvim-lua/plenary.nvim"} }
-	}
+	use	"folke/todo-comments.nvim"
 
 	--  Better syntax highlighintg
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
@@ -24,13 +20,10 @@ return require("packer").startup(function(use)
     use "sheerun/vim-polyglot"
 
 	-- Cool colorscheme
-	use "folke/tokyonight.nvim" 
+	use "folke/tokyonight.nvim"
 
 	-- LSP
-	use {
-		"williamboman/mason.nvim",
-		run = ":MasonUpdate"
-	}
+	use("williamboman/mason.nvim", {run = ":MasonUpdate"})
 	use "williamboman/mason-lspconfig.nvim"
 	use "neovim/nvim-lspconfig"
 end)
